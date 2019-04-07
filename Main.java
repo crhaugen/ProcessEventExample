@@ -7,8 +7,8 @@ import java.util.TimerTask;
 /*
     Author: Chyanne Haugen
 
-    Program checks for duplicates event IDs and will not process events with IDs that have
-    already been processed. In this example duplicates are assumed to be within some time period,
+    Program checks for duplicate event IDs and will not process events with IDs that have
+    already been processed. In this example, duplicates are assumed to be within some time period,
     so program stores event IDs in that period and when period has expired the hashmap is cleaned
     out. Another way I looked into would be to have each element in the hashmap have its own timer
     and then iterate through the map this may be slower depending on the implementation because you have
@@ -38,7 +38,7 @@ public class Main
         );
 
 
-        //test processes
+        //Test processes
         processEvent("1","");
         processEvent("2","");
         processEvent("3","");
