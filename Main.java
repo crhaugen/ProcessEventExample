@@ -12,8 +12,7 @@ import java.util.TimerTask;
     so program stores event IDs in that period and when period has expired the hashmap is cleaned
     out. Another way I looked into would be to have each element in the hashmap have its own timer
     and then iterate through the map this may be slower depending on the implementation because you have
-    to keep going through the whole map, but would work in cases when you can't guarantee that duplicates
-    happen in the same period of time.
+    to keep going through the whole map, but would work in cases where elements have different expiration times.
 
     Note: Just putting it all in main so it will be in one file. Depending on how it needs to be implemented
     and used you would probably want to put stuff in separate classes.
